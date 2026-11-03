@@ -4,49 +4,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casos de Outubro | Black October</title>
+<meta name="theme-color" content="#080b09">
+<title>Casos de Outubro | BLACK OCTOBER 2026</title>
+
 <link rel="stylesheet" href="style.css">
 
 <style>
-.case-intro {
-    margin: 25px 0;
+:root {
+    --bg: #080b09;
+    --panel: #101813;
+    --green: #00ff88;
+    --text: #e5eee8;
+    --muted: #9aaca1;
+    --border: #174b35;
 }
 
-.case-panel {
-    border: 1px solid #174b35;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #080b09;
+    border-bottom: 1px solid var(--border);
+    padding: 22px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-weight: 900;
+    font-size: 21px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--green);
+}
+
+nav a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+main {
+    width: min(100% - 36px, 1050px);
+    margin: 55px auto;
+}
+
+.tag {
+    color: var(--green);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(32px, 6vw, 54px);
+    margin: 18px 0;
+}
+
+h2, h3 {
+    color: var(--green);
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.intro {
+    font-size: 17px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 20px;
-    margin: 25px 0;
-    background: #080f0c;
+    padding: 25px;
+    margin: 22px 0;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.035);
 }
 
-.case-panel h2 {
-    color: #39ff91;
+.panel h2, .panel h3 {
+    margin-top: 0;
 }
 
-.case-status {
+.status {
     display: inline-block;
-    color: #39ff91;
-    border: 1px solid #23764b;
-    padding: 5px 10px;
+    color: var(--green);
+    border: 1px solid var(--green);
     border-radius: 5px;
-    font-size: 11px;
+    padding: 6px 10px;
+    font-size: 10px;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
-.case-field {
-    margin: 15px 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
 }
 
-.case-field strong {
-    color: #39ff91;
+.grid .panel {
+    margin: 0;
 }
 
-.case-note {
-    color: #8ca99a;
-    font-size: 13px;
-    border-left: 3px solid #23764b;
-    padding-left: 12px;
+.back {
+    display: inline-block;
+    margin-top: 25px;
+    color: var(--green);
+    text-decoration: none;
+    border: 1px solid var(--green);
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+
+.back:hover {
+    background: var(--green);
+    color: #080b09;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 25px;
+    text-align: center;
+    color: var(--muted);
+}
+
+footer strong {
+    color: var(--green);
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px;
+        flex-direction: column;
+    }
+
+    main {
+        margin: 35px auto;
+    }
+
+    .panel {
+        padding: 19px;
+    }
 }
 </style>
 </head>
@@ -54,101 +170,83 @@
 <body>
 
 <header>
-<a class="logo" href="index.html">BLACK<span>OCTOBER</span></a>
-<nav>
-<a href="index.html">← Voltar ao início</a>
-</nav>
+    <a class="logo" href="index.html">BLACK<span>OCTOBER</span></a>
+    <nav>
+        <a href="index.html">← Voltar ao início</a>
+    </nav>
 </header>
 
-<main class="article">
+<main>
 
-<span class="tag">05 — OCTOBER INVESTIGATION</span>
+    <span class="tag">05 — OCTOBER INVESTIGATION</span>
 
-<h1>Casos de Outubro</h1>
+    <h1>Casos de Outubro</h1>
 
-<p class="case-intro">
-Esta seção é dedicada à investigação de acontecimentos relacionados
-à segurança cibernética durante outubro de 2026.
-O objetivo é documentar incidentes, compreender seus impactos
-e analisar as ameaças envolvidas.
-</p>
+    <p class="intro">
+        Central de investigação dedicada ao registro e à análise
+        de incidentes de segurança cibernética durante outubro de 2026.
+        O objetivo é documentar ameaças, compreender seus impactos
+        e estudar as técnicas utilizadas.
+    </p>
 
-<div class="case-panel">
+    <section class="panel">
+        <span class="status">CENTRAL DE INVESTIGAÇÃO</span>
+        <h2>Registro de incidentes</h2>
 
-<span class="case-status">CENTRAL DE INVESTIGAÇÃO</span>
+        <p>
+            Esta seção reúne registros de incidentes cibernéticos
+            com base em informações verificáveis e fontes públicas.
+        </p>
 
-<h2>Registro de incidentes</h2>
+        <p><strong>Período:</strong> 01 a 31 de outubro de 2026</p>
+        <p><strong>Área:</strong> ataques digitais, vazamentos,
+        ransomware e fraudes virtuais.</p>
+        <p><strong>Critério:</strong> informações documentadas
+        e verificadas antes da publicação.</p>
+    </section>
 
-<p>
-Os registros serão organizados com base em informações publicadas
-por fontes verificáveis, como comunicados oficiais, equipes de
-resposta a incidentes e veículos jornalísticos especializados.
-</p>
+    <h2>Metodologia de investigação</h2>
 
-<div class="case-field">
-<strong>Período:</strong>
-<p>01 a 31 de outubro de 2026</p>
-</div>
+    <div class="grid">
+        <section class="panel">
+            <h3>01 — Identificação</h3>
+            <p>Identificar o sistema, serviço ou organização afetada.</p>
+        </section>
 
-<div class="case-field">
-<strong>Área de investigação:</strong>
-<p>Ataques cibernéticos, vazamentos, ransomware e fraudes digitais.</p>
-</div>
+        <section class="panel">
+            <h3>02 — Análise técnica</h3>
+            <p>Investigar a ameaça, a vulnerabilidade ou a técnica utilizada.</p>
+        </section>
 
-<div class="case-field">
-<strong>Critério:</strong>
-<p>Não serão apresentados incidentes sem evidências ou confirmação adequada.</p>
-</div>
+        <section class="panel">
+            <h3>03 — Impactos</h3>
+            <p>Documentar as consequências para sistemas e usuários.</p>
+        </section>
 
-</div>
+        <section class="panel">
+            <h3>04 — Fontes</h3>
+            <p>Registrar comunicados oficiais e outras fontes verificáveis.</p>
+        </section>
+    </div>
 
-<h2>Como os casos serão analisados</h2>
+    <section class="panel">
+        <span class="status">AGUARDANDO DOCUMENTAÇÃO</span>
+        <h2>Casos registrados</h2>
 
-<div class="case-panel">
-<h3>01 — Identificação</h3>
-<p>Qual organização, sistema ou serviço foi afetado?</p>
-</div>
+        <p>
+            Nenhum incidente foi documentado nesta seção até o momento.
+            Novos registros serão adicionados após pesquisa e verificação
+            das informações.
+        </p>
+    </section>
 
-<div class="case-panel">
-<h3>02 — Método utilizado</h3>
-<p>Qual ameaça ou técnica foi identificada no incidente?</p>
-</div>
-
-<div class="case-panel">
-<h3>03 — Impactos</h3>
-<p>Quais foram as consequências para os sistemas, organizações e usuários?</p>
-</div>
-
-<div class="case-panel">
-<h3>04 — Fontes</h3>
-<p>Quais documentos, comunicados ou reportagens sustentam o registro?</p>
-</div>
-
-<h2>Registros documentados</h2>
-
-<div class="case-panel">
-<span class="case-status">AGUARDANDO DOCUMENTAÇÃO</span>
-<h3>Nenhum caso registrado nesta seção</h3>
-
-<p>
-Os acontecimentos serão adicionados após pesquisa e verificação
-das informações. A ausência de registros nesta página não significa
-que nenhum incidente tenha ocorrido.
-</p>
-</div>
-
-<p class="case-note">
-BLACK OCTOBER 2026 — Investigação independente para fins educativos.
-As informações devem ser verificadas e acompanhadas de suas fontes.
-</p>
-
-<a class="back" href="index.html">← Voltar ao portal</a>
+    <a class="back" href="index.html">← Voltar ao portal</a>
 
 </main>
 
 <footer>
-<strong>BLACK OCTOBER 2026</strong>
-<p>Desenvolvido por Hector.</p>
+    <strong>BLACK OCTOBER 2026</strong>
+    <p>Projeto independente desenvolvido por Hector.</p>
 </footer>
 
 </body>
