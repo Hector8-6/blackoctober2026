@@ -2,209 +2,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ameaças Digitais | Black October</title>
-<link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b09">
+    <meta name="description" content="Investigação educativa sobre malware, phishing, ransomware e ameaças digitais.">
 
-<style>
-.cyber-map {
-    width: 100%;
-    margin: 25px 0;
-    overflow: hidden;
-    border: 1px solid #174b35;
-    border-radius: 12px;
-    background: #050b09;
-}
+    <title>Ameaças Digitais | BLACK OCTOBER 2026</title>
 
-.cyber-map svg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.map-caption {
-    padding: 12px 15px;
-    color: #8ca99a;
-    font-size: 12px;
-    border-top: 1px solid #174b35;
-    letter-spacing: 1px;
-}
-
-.map-title {
-    color: #39ff91;
-    font-size: 13px;
-    letter-spacing: 2px;
-    padding: 15px 15px 0;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<a class="logo" href="../index.html">BLACK<span>OCTOBER</span></a>
-<nav>
-<a href="../index.html">← Voltar ao início</a>
-</nav>
+    <a class="logo" href="index.html">
+        BLACK<span>OCTOBER</span>
+    </a>
+
+    <p class="subtitle">CYBERSECURITY INVESTIGATION PROJECT — 2026</p>
+
+    <nav>
+        <a href="index.html">← Voltar ao início</a>
+    </nav>
 </header>
 
 <main class="article">
 
-<span class="tag">01 — CYBER THREATS</span>
+    <span class="tag">01 — CYBER THREATS</span>
 
-<h1>Ameaças digitais</h1>
+    <h1>Ameaças digitais</h1>
 
-<div class="cyber-map">
+    <p>
+        As ameaças digitais representam riscos à confidencialidade,
+        integridade e disponibilidade de sistemas, redes e informações.
+        Elas podem atingir usuários comuns, empresas e instituições.
+    </p>
 
-<div class="map-title">
-GLOBAL CYBER THREAT — VISUALIZATION
-</div>
+    <section class="cyber-map">
+        <h2>GLOBAL CYBER THREAT — VISUALIZATION</h2>
 
-<svg viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 900 470" role="img"
+             aria-label="Mapa ilustrativo de conexões digitais entre regiões do mundo">
 
-<defs>
-<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-<path d="M30 0H0V30" fill="none" stroke="#123325" stroke-width="0.7"/>
-</pattern>
+            <defs>
+                <pattern id="grid" width="30" height="30"
+                         patternUnits="userSpaceOnUse">
+                    <path d="M30 0H0V30" fill="none"
+                          stroke="#123325" stroke-width="0.7"/>
+                </pattern>
 
-<radialGradient id="glow">
-<stop offset="0%" stop-color="#16ff85" stop-opacity=".2"/>
-<stop offset="100%" stop-color="#16ff85" stop-opacity="0"/>
-</radialGradient>
+                <radialGradient id="glow">
+                    <stop offset="0%" stop-color="#16ff85" stop-opacity=".2"/>
+                    <stop offset="100%" stop-color="#16ff85" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
 
-<filter id="light">
-<feGaussianBlur stdDeviation="4" result="blur"/>
-<feMerge>
-<feMergeNode in="blur"/>
-<feMergeNode in="SourceGraphic"/>
-</feMerge>
-</filter>
-</defs>
+            <rect width="900" height="470" fill="#050b09"/>
+            <rect width="900" height="470" fill="url(#grid)"/>
+            <circle cx="450" cy="230" r="220" fill="url(#glow)"/>
 
-<rect width="900" height="470" fill="#050b09"/>
-<rect width="900" height="470" fill="url(#grid)"/>
-<circle cx="450" cy="230" r="220" fill="url(#glow)"/>
+            <g fill="#102b20" stroke="#23764b" stroke-width="2">
+                <path d="M100 100 L145 65 L205 70 L235 105 L220 135 L245 165 L220 195 L195 220 L170 205 L155 175 L125 160 L105 125 Z"/>
+                <path d="M230 240 L265 255 L285 300 L270 355 L245 410 L225 370 L215 315 Z"/>
+                <path d="M380 95 L425 75 L470 90 L500 115 L485 140 L450 150 L430 180 L395 160 L370 125 Z"/>
+                <path d="M430 180 L475 170 L510 205 L500 265 L470 320 L445 300 L420 245 Z"/>
+                <path d="M500 100 L560 65 L650 70 L710 105 L765 125 L780 160 L740 185 L680 175 L650 200 L605 175 L570 145 L520 155 Z"/>
+                <path d="M710 270 L750 255 L785 280 L775 320 L740 340 L710 315 Z"/>
+            </g>
 
-<!-- Continentes -->
-<g fill="#102b20" stroke="#23764b" stroke-width="2">
+            <g fill="none" stroke="#29ff91" stroke-width="2"
+               stroke-dasharray="7 7" opacity=".8">
+                <path d="M175 145 Q330 20 470 115"/>
+                <path d="M470 115 Q600 50 700 140"/>
+                <path d="M470 115 Q540 240 735 290"/>
+                <path d="M175 145 Q230 250 255 325"/>
+                <path d="M255 325 Q390 390 470 240"/>
+                <path d="M700 140 Q570 330 470 240"/>
+            </g>
 
-<path d="M100 100 L145 65 L205 70 L235 105
-L220 135 L245 165 L220 195 L195 220
-L170 205 L155 175 L125 160 L105 125 Z"/>
+            <g fill="#39ff91">
+                <circle cx="175" cy="145" r="6"/>
+                <circle cx="470" cy="115" r="6"/>
+                <circle cx="700" cy="140" r="6"/>
+                <circle cx="255" cy="325" r="6"/>
+                <circle cx="470" cy="240" r="6"/>
+                <circle cx="735" cy="290" r="6"/>
+            </g>
 
-<path d="M230 240 L265 255 L285 300
-L270 355 L245 410 L225 370 L215 315 Z"/>
+            <g fill="#8affbd" font-family="monospace" font-size="12">
+                <text x="35" y="35">BLACK OCTOBER // 2026</text>
+                <text x="35" y="445">NETWORK VISUALIZATION</text>
+                <text x="710" y="445">THREAT MAP</text>
+            </g>
+        </svg>
 
-<path d="M380 95 L425 75 L470 90 L500 115
-L485 140 L450 150 L430 180 L395 160 L370 125 Z"/>
+        <p class="map-caption">
+            MAPA ILUSTRATIVO — ROTAS E MARCADORES NÃO REPRESENTAM
+            INCIDENTES REAIS.
+        </p>
+    </section>
 
-<path d="M430 180 L475 170 L510 205
-L500 265 L470 320 L445 300 L420 245 Z"/>
+    <section>
+        <h2>Malware</h2>
+        <p>
+            Malware é um termo utilizado para designar programas
+            desenvolvidos para executar atividades maliciosas.
+            Entre suas categorias estão vírus, worms, trojans e spyware.
+        </p>
+    </section>
 
-<path d="M500 100 L560 65 L650 70 L710 105
-L765 125 L780 160 L740 185 L680 175
-L650 200 L605 175 L570 145 L520 155 Z"/>
+    <section>
+        <h2>Phishing</h2>
+        <p>
+            Phishing é uma técnica de engenharia social que utiliza
+            mensagens, sites ou comunicações fraudulentas para tentar
+            obter senhas, dados pessoais e informações financeiras.
+        </p>
+    </section>
 
-<path d="M710 270 L750 255 L785 280
-L775 320 L740 340 L710 315 Z"/>
+    <section>
+        <h2>Ransomware</h2>
+        <p>
+            Ransomware é um tipo de malware que pode criptografar
+            arquivos e impedir o acesso aos dados, frequentemente
+            acompanhado de uma exigência de resgate.
+        </p>
+    </section>
 
-</g>
+    <section>
+        <h2>A importância da prevenção</h2>
+        <ul>
+            <li>Manter sistemas e aplicativos atualizados.</li>
+            <li>Evitar abrir links e anexos suspeitos.</li>
+            <li>Utilizar autenticação multifator.</li>
+            <li>Manter cópias de segurança dos arquivos.</li>
+            <li>Verificar a autenticidade de sites e mensagens.</li>
+        </ul>
+    </section>
 
-<!-- Rotas ilustrativas -->
-<g fill="none" stroke="#29ff91" stroke-width="2"
-stroke-dasharray="7 7" opacity=".8">
-
-<path d="M175 145 Q330 20 470 115"/>
-<path d="M470 115 Q600 50 700 140"/>
-<path d="M470 115 Q540 240 735 290"/>
-<path d="M175 145 Q230 250 255 325"/>
-<path d="M255 325 Q390 390 470 240"/>
-<path d="M700 140 Q570 330 470 240"/>
-
-</g>
-
-<!-- Pontos luminosos -->
-<g fill="#39ff91" filter="url(#light)">
-
-<circle cx="175" cy="145" r="6"/>
-<circle cx="470" cy="115" r="6"/>
-<circle cx="700" cy="140" r="6"/>
-<circle cx="255" cy="325" r="6"/>
-<circle cx="470" cy="240" r="6"/>
-<circle cx="735" cy="290" r="6"/>
-
-</g>
-
-<!-- Anéis -->
-<g fill="none" stroke="#39ff91" opacity=".5">
-<circle cx="175" cy="145" r="14"/>
-<circle cx="470" cy="115" r="14"/>
-<circle cx="700" cy="140" r="14"/>
-<circle cx="255" cy="325" r="14"/>
-<circle cx="470" cy="240" r="14"/>
-<circle cx="735" cy="290" r="14"/>
-</g>
-
-<g fill="#8affbd" font-family="monospace" font-size="12">
-<text x="35" y="35">BLACK OCTOBER // 2026</text>
-<text x="35" y="445">NETWORK VISUALIZATION</text>
-<text x="710" y="445">THREAT MAP</text>
-</g>
-
-</svg>
-
-<div class="map-caption">
-MAPA ILUSTRATIVO — ROTAS E MARCADORES NÃO REPRESENTAM INCIDENTES REAIS.
-</div>
-
-</div>
-
-<p>
-As ameaças digitais representam riscos à confidencialidade,
-integridade e disponibilidade de sistemas e informações.
-</p>
-
-<h2>Malware</h2>
-
-<p>
-Malware é um termo utilizado para designar programas desenvolvidos
-para executar atividades maliciosas. Entre suas categorias estão
-vírus, worms, trojans e spyware.
-</p>
-
-<h2>Phishing</h2>
-
-<p>
-Phishing é uma técnica de engenharia social que utiliza mensagens,
-sites ou comunicações fraudulentas para tentar obter senhas,
-dados pessoais e informações financeiras.
-</p>
-
-<h2>Ransomware</h2>
-
-<p>
-Ransomware é um tipo de malware que pode criptografar arquivos
-e impedir o acesso aos dados, frequentemente acompanhado de
-uma exigência de resgate.
-</p>
-
-<h2>A importância da prevenção</h2>
-
-<ul>
-<li>Manter sistemas atualizados.</li>
-<li>Evitar links suspeitos.</li>
-<li>Utilizar autenticação em duas etapas.</li>
-<li>Manter cópias de segurança.</li>
-</ul>
-
-<a class="back" href="../index.html">← Voltar ao portal</a>
+    <a class="back" href="index.html">← Voltar ao portal</a>
 
 </main>
 
 <footer>
-<strong>BLACK OCTOBER 2026</strong>
-<p>Desenvolvido por Hector.</p>
+    <strong>BLACK OCTOBER 2026</strong>
+    <p>Desenvolvido por Hector — 2026.</p>
+    <p>Projeto independente de estudo sobre segurança cibernética.</p>
 </footer>
 
 </body>
