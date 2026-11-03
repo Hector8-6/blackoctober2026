@@ -4,410 +4,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BLACK OCTOBER 2026 — Projeto independente de estudos sobre segurança cibernética, ameaças digitais, criptomoedas e inteligência artificial.">
-    <meta name="theme-color" content="#050807">
+    <meta name="description" content="BLACK OCTOBER 2026 — Projeto independente de estudos sobre segurança cibernética.">
     <title>BLACK OCTOBER 2026 | Hector</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        :root {
-            --bg: #050807;
-            --panel: #0b1210;
-            --green: #00ff88;
-            --text: #e8f5ee;
-            --muted: #91a69b;
-            --border: rgba(0,255,136,.2);
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: Arial, sans-serif;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        header {
-            padding: 22px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border);
-            background: #080e0b;
-        }
-
-        .logo {
-            color: var(--green);
-            font-weight: 900;
-            letter-spacing: 2px;
-        }
-
-        nav a {
-            color: var(--muted);
-            margin-left: 20px;
-            font-size: 13px;
-        }
-
-        nav a:hover {
-            color: var(--green);
-        }
-
-        .hero {
-            padding: 75px 7% 65px;
-            background: radial-gradient(ellipse at top, #103322 0%, #050807 65%);
-        }
-
-        .tag {
-            color: var(--green);
-            letter-spacing: 3px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-
-        h1 {
-            font-size: clamp(38px, 8vw, 76px);
-            margin: 20px 0 12px;
-            line-height: 1.05;
-        }
-
-        h1 span {
-            color: var(--green);
-        }
-
-        .hero p {
-            max-width: 750px;
-            line-height: 1.8;
-            color: var(--muted);
-            font-size: 15px;
-        }
-
-        .signature {
-            color: var(--green) !important;
-            font-weight: bold;
-        }
-
-        main {
-            padding: 35px 7% 70px;
-        }
-
-        .section-title {
-            margin-bottom: 25px;
-        }
-
-        .section-title h2 {
-            font-size: 25px;
-            margin-bottom: 8px;
-        }
-
-        .section-title p {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            display: block;
-            background: var(--panel);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: .25s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--green);
-            box-shadow: 0 0 22px rgba(0,255,136,.1);
-        }
-
-        .card-visual {
-            height: 155px;
-            background: #08130e;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .card-visual svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .card-visual img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-content small {
-            color: var(--green);
-            letter-spacing: 2px;
-            font-size: 10px;
-        }
-
-        .card-content h3 {
-            margin: 10px 0;
-            font-size: 19px;
-        }
-
-        .card-content p {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        .card-content strong {
-            color: var(--green);
-            font-size: 12px;
-        }
-
-        .about {
-            margin-top: 55px;
-            padding: 28px;
-            background: var(--panel);
-            border-left: 3px solid var(--green);
-            border-radius: 8px;
-        }
-
-        .about h2 {
-            margin-top: 0;
-        }
-
-        .about p {
-            color: var(--muted);
-            line-height: 1.8;
-            font-size: 14px;
-        }
-
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 25px 7%;
-            text-align: center;
-            color: var(--muted);
-            font-size: 12px;
-        }
-
-        footer span {
-            color: var(--green);
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 12px;
-            }
-
-            .hero {
-                padding-top: 55px;
-            }
-
-            main {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <a href="index.html" class="logo">BLACK OCTOBER</a>
+    <a class="logo" href="index.html">BLACK<span>OCTOBER</span></a>
+
+    <p class="subtitle">CYBERSECURITY INVESTIGATION PROJECT — 2026</p>
 
     <nav>
-        <a href="index.html">INÍCIO</a>
-        <a href="#categorias">CATEGORIAS</a>
-        <a href="#sobre">SOBRE</a>
+        <a href="index.html">Início</a>
+        <a href="#categorias">Investigações</a>
+        <a href="#sobre">Sobre o projeto</a>
     </nav>
 </header>
 
-<section class="hero">
-    <div class="tag">CYBERSECURITY PROJECT — 2026</div>
-    <h1>BLACK <span>OCTOBER</span> 2026</h1>
-
-    <p>
-        Este site foi criado por mim, Hector, com o objetivo de estudar,
-        investigar e apresentar acontecimentos relacionados à segurança
-        cibernética.
-    </p>
-
-    <p>
-        O projeto surgiu do meu interesse pela tecnologia, pelos ataques
-        digitais e pelos desafios que envolvem a proteção de empresas,
-        sistemas e informações.
-    </p>
-
-    <p>
-        Em outubro de 2026, enquanto grande parte da atenção no Brasil
-        estava voltada aos acontecimentos políticos nacionais, o cenário
-        da segurança digital também apresentava acontecimentos que
-        mereciam ser conhecidos e estudados.
-    </p>
-
-    <p>
-        Aqui serão apresentados casos, informações, análises e explicações
-        sobre ameaças digitais, criptomoedas e o uso da inteligência
-        artificial em ataques cibernéticos.
-    </p>
-
-    <p class="signature">
-        Conhecimento é a primeira linha de defesa.
-    </p>
-</section>
-
 <main>
-    <section id="categorias">
-        <div class="section-title">
-            <div class="tag">EXPLORE O PROJETO</div>
-            <h2>Áreas de investigação</h2>
-            <p>Conheça os temas abordados no BLACK OCTOBER 2026.</p>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="tag">PROJETO INDEPENDENTE — 2026</span>
+
+            <h1>BLACK <span>OCTOBER</span> 2026</h1>
+
+            <p>
+                Este site foi criado por mim, Hector, com o objetivo de
+                estudar, investigar e apresentar acontecimentos relacionados
+                à segurança cibernética.
+            </p>
+
+            <p>
+                O projeto surgiu do meu interesse pela tecnologia, pelos
+                ataques digitais e pelos desafios que envolvem a proteção
+                de empresas, sistemas e informações.
+            </p>
+
+            <p>
+                Em outubro de 2026, enquanto grande parte da atenção no Brasil
+                estava voltada aos acontecimentos políticos nacionais,
+                o cenário da segurança digital também apresentava
+                acontecimentos que mereciam ser conhecidos e estudados.
+            </p>
+
+            <p>
+                Aqui serão apresentados casos, informações, análises e
+                explicações sobre ameaças digitais, criptomoedas e o uso
+                da inteligência artificial em ataques cibernéticos.
+            </p>
+
+            <a class="button" href="#categorias">Explorar projeto</a>
         </div>
 
-        <div class="cards">
+        <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000"
+            alt="Circuitos e tecnologia"
+        >
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section id="categorias">
+        <span class="tag">ÁREAS DE INVESTIGAÇÃO</span>
+        <h2>Explore os assuntos</h2>
+
+        <div class="grid">
 
             <!-- 01 AMEAÇAS DIGITAIS -->
             <a class="card" href="ameacas.html">
-                <div class="card-visual">
-                    <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="600" height="300" fill="#08130e"/>
-                        <g fill="none" stroke="#00ff88" opacity=".45">
-                            <path d="M40 80 L180 50 L260 110 L390 60 L550 120"/>
-                            <path d="M30 200 L160 140 L300 220 L430 160 L570 230"/>
-                            <path d="M100 20 L100 280 M250 20 L250 280 M400 20 L400 280 M520 20 L520 280"/>
-                        </g>
-                        <g fill="#00ff88">
-                            <circle cx="180" cy="50" r="7"/>
-                            <circle cx="260" cy="110" r="7"/>
-                            <circle cx="390" cy="60" r="7"/>
-                            <circle cx="300" cy="220" r="7"/>
-                            <circle cx="430" cy="160" r="7"/>
-                        </g>
-                        <g fill="none" stroke="#00ff88" stroke-width="3">
-                            <circle cx="300" cy="145" r="65"/>
-                            <path d="M300 80 L300 210 M235 145 L365 145"/>
-                        </g>
-                        <text x="300" y="153" fill="#00ff88" font-size="23" text-anchor="middle" font-weight="bold">CYBER</text>
-                    </svg>
-                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=900"
+                    alt="Tecnologia e segurança digital"
+                    loading="lazy"
+                >
 
                 <div class="card-content">
-                    <small>01 — SECURITY</small>
+                    <span>01 / DIGITAL THREATS</span>
                     <h3>Ameaças digitais</h3>
-                    <p>Malware, phishing, ransomware e os riscos presentes no ambiente digital.</p>
-                    <strong>EXPLORAR →</strong>
+                    <p>
+                        Malware, phishing, ransomware e os riscos presentes
+                        no ambiente digital.
+                    </p>
+                    <b>ACESSAR →</b>
                 </div>
             </a>
 
             <!-- 02 CRIPTOMOEDAS -->
             <a class="card" href="criptomoedas.html">
-                <div class="card-visual">
-                    <img src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=900" alt="Representação de criptomoedas" loading="lazy">
-                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=900"
+                    alt="Criptomoedas"
+                    loading="lazy"
+                >
 
                 <div class="card-content">
-                    <small>02 — BLOCKCHAIN</small>
+                    <span>02 / CRYPTOCURRENCIES</span>
                     <h3>Criptomoedas</h3>
-                    <p>Blockchain, carteiras digitais, fraudes e segurança financeira digital.</p>
-                    <strong>EXPLORAR →</strong>
+                    <p>
+                        Blockchain, carteiras digitais, fraudes e segurança
+                        financeira digital.
+                    </p>
+                    <b>ACESSAR →</b>
                 </div>
             </a>
 
             <!-- 03 INTELIGÊNCIA ARTIFICIAL -->
             <a class="card" href="inteligencia-artificial.html">
-                <div class="card-visual">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900" alt="Inteligência artificial" loading="lazy">
-                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900"
+                    alt="Inteligência artificial"
+                    loading="lazy"
+                >
 
                 <div class="card-content">
-                    <small>03 — ARTIFICIAL INTELLIGENCE</small>
+                    <span>03 / ARTIFICIAL INTELLIGENCE</span>
                     <h3>Inteligência artificial</h3>
-                    <p>Deepfakes, engenharia social e aplicações da IA na segurança digital.</p>
-                    <strong>EXPLORAR →</strong>
+                    <p>
+                        IA, deepfakes, automação e ameaças emergentes.
+                    </p>
+                    <b>ACESSAR →</b>
                 </div>
             </a>
 
             <!-- 04 DEFESA DIGITAL -->
             <a class="card" href="defesa-digital.html">
-                <div class="card-visual">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900" alt="Proteção de dados digitais" loading="lazy">
-                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900"
+                    alt="Segurança digital"
+                    loading="lazy"
+                >
 
                 <div class="card-content">
-                    <small>04 — PROTECTION</small>
+                    <span>04 / DIGITAL DEFENSE</span>
                     <h3>Defesa digital</h3>
-                    <p>Senhas seguras, autenticação, atualizações e proteção de informações.</p>
-                    <strong>EXPLORAR →</strong>
+                    <p>
+                        Proteção de dados, senhas, autenticação e prevenção.
+                    </p>
+                    <b>ACESSAR →</b>
                 </div>
             </a>
 
             <!-- 05 CASOS DE OUTUBRO -->
             <a class="card" href="casos-outubro.html">
-                <div class="card-visual">
-                    <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="600" height="300" fill="#08130e"/>
-                        <g fill="none" stroke="#00ff88" stroke-width="2">
-                            <rect x="175" y="45" width="250" height="210" rx="10"/>
-                            <path d="M210 100 H390 M210 140 H390 M210 180 H350"/>
-                            <circle cx="300" cy="75" r="12"/>
-                        </g>
-                        <text x="300" y="225" fill="#00ff88" font-size="20" text-anchor="middle">INVESTIGATION</text>
-                    </svg>
-                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900"
+                    alt="Mundo conectado"
+                    loading="lazy"
+                >
 
                 <div class="card-content">
-                    <small>05 — INVESTIGATION</small>
+                    <span>05 / OCTOBER INVESTIGATION</span>
                     <h3>Casos de outubro</h3>
-                    <p>Investigação e análise documentada de acontecimentos de segurança digital.</p>
-                    <strong>EXPLORAR →</strong>
+                    <p>
+                        Investigação de acontecimentos reais de segurança digital.
+                    </p>
+                    <b>ACESSAR →</b>
                 </div>
             </a>
 
         </div>
     </section>
 
-    <section class="about" id="sobre">
-        <div class="tag">SOBRE O PROJETO</div>
-        <h2>Uma iniciativa independente</h2>
+    <!-- SOBRE -->
+    <section class="introduction" id="sobre">
+        <span class="tag">SOBRE O PROJETO</span>
+        <h2>Uma investigação independente</h2>
 
         <p>
-            O BLACK OCTOBER 2026 é um projeto educativo independente,
-            desenvolvido por Hector. Seu objetivo é reunir estudos,
-            informações e análises sobre segurança cibernética.
-            As informações apresentadas devem ser acompanhadas de fontes
-            verificáveis. O projeto não representa uma organização oficial.
+            O BLACK OCTOBER 2026 é um projeto independente desenvolvido
+            por Hector, com finalidade educativa e de pesquisa.
+        </p>
+
+        <p>
+            O objetivo é estudar ameaças digitais, compreender os métodos
+            utilizados em ataques cibernéticos e apresentar formas de
+            prevenção e proteção.
         </p>
     </section>
+
+    <!-- FRASE -->
+    <section class="quote">
+        <h2>Conhecimento é a primeira linha de defesa.</h2>
+        <p>BLACK OCTOBER 2026</p>
+    </section>
+
 </main>
 
 <footer>
-    <p>BLACK OCTOBER 2026</p>
-    <p>Desenvolvido por <span>Hector</span> — 2026</p>
-    <p>Conhecimento é a primeira linha de defesa.</p>
+    <p><strong>BLACK OCTOBER 2026</strong></p>
+    <p>Desenvolvido por Hector — 2026.</p>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
